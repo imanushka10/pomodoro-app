@@ -31,14 +31,14 @@ export class Timer extends Component {
                         this.setState({
                             isSession: false
                         })
-                        this.toggleInterval()
+                        this.props.toggleInterval()
                             (this.state.isSession)
                     }
                     else {
                         this.setState({
                             isSession: true
                         })
-                        this.toggleInterval()
+                        this.props.toggleInterval()
                             (this.state.isSession)
 
                     }
